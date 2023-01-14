@@ -34,20 +34,20 @@ public class SwerveDrivetrain extends SubsystemBase {
   public static double backRightOffset = 277;
 
   // put your can Id's here!
-  public static final int frontLeftDriveId = 6;
+  public static final int frontLeftDriveId = 0;
   public static final int frontLeftCANCoderId = 3;
   public static final int frontLeftSteerId = 3;
   // put your can Id's here!
-  public static final int frontRightDriveId = 5;
+  public static final int frontRightDriveId = 1;
   public static final int frontRightCANCoderId = 0;
   public static final int frontRightSteerId = 0;
   // put your can Id's here!
-  public static final int backLeftDriveId = 7;
+  public static final int backLeftDriveId = 2;
   public static final int backLeftCANCoderId = 1;
   public static final int backLeftSteerId = 2;
   // put your can Id's here!
 
-  public static final int backRightDriveId = 1;
+  public static final int backRightDriveId = 3;
   public static final int backRightCANCoderId = 2;
   public static final int backRightSteerId = 4;
   public static AHRS gyro = new AHRS(I2C.Port.kOnboard);
