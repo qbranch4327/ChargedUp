@@ -33,4 +33,8 @@ public class IntakeSubsystem extends SubsystemBase {
         intake2.set(DoubleSolenoid.Value.kOff);
     }
 
+    public boolean isCone()     {
+        return true;
+    }
+
 }
