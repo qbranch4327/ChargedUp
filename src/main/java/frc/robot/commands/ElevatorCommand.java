@@ -8,7 +8,7 @@ public class ElevatorCommand extends CommandBase {
     
     XboxController controller;
     ElevatorSubsystem elevatorSubsystem;
-    InclinatorSubsystem inclinatorSubsystem;
+    TiltSubsystem inclinatorSubsystem;
     final double upperDistance = 0;
     final double middleDistance = 0;
     final double restPosition = 0;
@@ -16,7 +16,7 @@ public class ElevatorCommand extends CommandBase {
     final double middleDegree = 0;
     final double restDegree = 0;
 
-    public ElevatorCommand(ElevatorSubsystem eSubsystem, InclinatorSubsystem iSubsystem, XboxController controller)  {
+    public ElevatorCommand(ElevatorSubsystem eSubsystem, TiltSubsystem iSubsystem, XboxController controller)  {
         this.controller = controller;
         this.elevatorSubsystem = eSubsystem;
         this.inclinatorSubsystem = iSubsystem;
