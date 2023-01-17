@@ -5,12 +5,12 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType; 
 
-public class inclinatorSubsystem extends SubsystemBase  {
+public class InclinatorSubsystem extends SubsystemBase  {
     
     CANSparkMax tiltMotor;
     Encoder tiltEncoder;
 
-    public inclinatorSubsystem()    {
+    public InclinatorSubsystem()    {
         tiltMotor = new CANSparkMax(5, MotorType.kBrushless);
         tiltEncoder = new Encoder(2, 3);
     }
