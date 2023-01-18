@@ -28,4 +28,16 @@ public class TiltSubsystem extends SubsystemBase  {
             tiltMotor.stopMotor();
         }
     }
+
+    public void resetEncoders() {
+        tiltEncoder.reset();
+    }
+
+    public boolean encoderCheck(double distance){
+        if (tiltEncoder.getDistance() == distance)  {
+            return true;
+        }
+        return false;
+    }
+
 }

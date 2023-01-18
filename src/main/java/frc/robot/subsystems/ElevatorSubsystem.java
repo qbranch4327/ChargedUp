@@ -37,4 +37,15 @@ public class ElevatorSubsystem extends SubsystemBase{
         }
     }
 
+    public void resetEncoders() {
+        elevatorEncoder.reset();
+    }
+
+    public boolean encoderCheck(double distance){
+        if (elevatorEncoder.getDistance() == distance)  {
+            return true;
+        }
+        return false;
+    }
+
 }
