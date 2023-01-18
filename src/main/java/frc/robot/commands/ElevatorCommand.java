@@ -9,12 +9,6 @@ public class ElevatorCommand extends CommandBase {
     XboxController controller;
     ElevatorSubsystem elevatorSubsystem;
     TiltSubsystem inclinatorSubsystem;
-    final double upperDistance = 0;
-    final double middleDistance = 0;
-    final double restPosition = 0;
-    final double upperDegree = 0;
-    final double middleDegree = 0;
-    final double restDegree = 0;
 
     public ElevatorCommand(ElevatorSubsystem eSubsystem, TiltSubsystem iSubsystem, XboxController controller)  {
         this.controller = controller;
@@ -27,16 +21,16 @@ public class ElevatorCommand extends CommandBase {
     @Override 
     public void execute()   {
         if (controller.getAButton())    {
-            elevatorSubsystem.goUp(upperDistance);
-            inclinatorSubsystem.tiltUp(upperDegree);
+            elevatorSubsystem.goUp(Data.n("upperDistance"));
+            inclinatorSubsystem.tiltUp(Data.n("upperDegree"));
         }
         if (controller.getAButton())    {
-            elevatorSubsystem.goUp(middleDistance);
-            inclinatorSubsystem.tiltUp(middleDegree);
+            elevatorSubsystem.goUp(Data.n("middleDistance"));
+            inclinatorSubsystem.tiltUp(Data.n("middleDegree"));
         }
         if (controller.getAButton())    {
-            elevatorSubsystem.goDown(restPosition);
-            inclinatorSubsystem.tiltDown(restDegree);
+            elevatorSubsystem.goDown(Data.n("restPosition"));
+            inclinatorSubsystem.tiltDown(Data.n("restDegree"));
         }
     }
 
