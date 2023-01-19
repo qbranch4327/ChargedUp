@@ -13,7 +13,7 @@ public class Data extends SubsystemBase {
             add(0.0);  //   restPosition
             add(0.0);  //   upperDegree
             add(0.0);  //   middleDegree 
-            add(0.0);  //   middleDegree 
+            add(0.0);  //   restDegree 
         }
     };
 

@@ -11,8 +11,8 @@ import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.I2C;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.math.util.Units;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
@@ -28,10 +28,10 @@ public class SwerveDrivetrain extends SubsystemBase {
 
   // this is where you put the angle offsets you got from the smart dashboard
 
-  public static double frontLeftOffset = 15;
-  public static double frontRightOffset = 250;
-  public static double backLeftOffset = 176;
-  public static double backRightOffset = 277;
+  public static double frontLeftOffset = 312.451;
+  public static double frontRightOffset = 307.266;
+  public static double backLeftOffset = 38.936;
+  public static double backRightOffset = 35.420;
 
   // put your can Id's here!
   public static final int frontLeftDriveId = 0;

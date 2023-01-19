@@ -22,9 +22,9 @@ public class SwerveModuleMK3 {
   private static final double kDriveD = 0.1;
   private static final double kDriveF = 0.2;
 
-  private static final double kAngleP = 1.0;
-  private static final double kAngleI = 0.0;
-  private static final double kAngleD = 0.0;
+  private static final double kAngleP = 0.3;
+  private static final double kAngleI = 0.01;
+  private static final double kAngleD = 0.1;
 
   // CANCoder has 4096 ticks/rotation
   private static double kEncoderTicksPerRotation = 4096;
